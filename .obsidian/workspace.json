@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ISET/Prep_certif/S1.md",
+                "file": "ISET/Admin_base/S1.md",
                 "mode": "source",
                 "source": false
               },
@@ -168,12 +168,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03c5f2871b409b72",
+  "active": "4d61c7301f750e5b",
   "lastOpenFiles": [
+    "ISET/Prep_certif/S1.md",
+    "ISET/Admin_base/S1.md",
     "images",
     "images/Pasted image 20250213200936.png",
     "ISET/Admin_base",
-    "ISET/Projet_integra/S1.md",
-    "ISET/Prep_certif/S1.md"
+    "ISET/Projet_integra/S1.md"
   ]
 }
