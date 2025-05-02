@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA2/Inter-VLAN-Routing/Untitled.md",
+                "file": "CCNA2/Inter-VLAN-Routing/Router-on-a-stick.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Router-on-a-stick"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "df691a0ef8c16e2d",
@@ -170,8 +171,11 @@
   },
   "active": "2e9799a2c5949951",
   "lastOpenFiles": [
+    "images/Pasted image 20250502213146.png",
+    "CCNA2/Inter-VLAN-Routing/Inter-VLAN Routing Operation.md",
+    "CCNA2/Inter-VLAN-Routing/Router-on-a-stick.md",
+    "images/Pasted image 20250502211818.png",
     "CCNA2/VLANs/VLAN Trunk.md",
-    "CCNA2/Inter-VLAN-Routing/Untitled.md",
     "CCNA2/Inter-VLAN-Routing",
     "CCNA2/VLANs/VLAN Configuration.md",
     "images/Pasted image 20250502154940.png",
@@ -205,8 +209,6 @@
     "virtualization",
     "routage/routing deepseek.md",
     "routage",
-    "routage/gemini prep.md",
-    "Stage/routage gemini.md",
     "Untitled",
     "ISET/Administration des Services Reseau/jebri",
     "images/Pasted image 20250315225740.png",
@@ -214,7 +216,6 @@
     "images/Pasted image 20250315225013.png",
     "CCNA2/Concepts de commutation",
     "Local to VM",
-    "Local to VM/Git",
-    "images/Pasted image 20250301220549.png"
+    "Local to VM/Git"
   ]
 }
