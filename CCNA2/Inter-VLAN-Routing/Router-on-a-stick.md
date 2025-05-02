@@ -110,3 +110,191 @@ S1(config-if)# end
 
 #### Same for S2
 
+
+### **4.2.4 R1 Subinterface Configuration (Router-on-a-Stick)**
+
+#### 🔹 Objectif
+
+Configurer des **sous-interfaces** sur R1 pour permettre le routage inter-VLAN à travers le lien trunk connecté au switch **S1**.
+
+---
+
+#### 🧩 Étape 1 : Créer les sous-interfaces pour chaque VLAN
+
+```lua
+R1(config)# interface G0/0/1.10
+R1(config-subif)# description Default Gateway for VLAN 10
+R1(config-subif)# encapsulation dot1Q 10
+R1(config-subif)# ip address 192.168.10.1 255.255.255.0
+R1(config-subif)# exit
+
+R1(config)# interface G0/0/1.20
+R1(config-subif)# description Default Gateway for VLAN 20
+R1(config-subif)# encapsulation dot1Q 20
+R1(config-subif)# ip address 192.168.20.1 255.255.255.0
+R1(config-subif)# exit
+
+R1(config)# interface G0/0/1.99
+R1(config-subif)# description Default Gateway for VLAN 99
+R1(config-subif)# encapsulation dot1Q 99
+R1(config-subif)# ip address 192.168.99.1 255.255.255.0
+R1(config-subif)# exit
+```
+
+---
+
+#### 🧩 Étape 2 : Activer l’interface physique trunk
+
+```lua
+R1(config)# interface G0/0/1
+R1(config-if)# description Trunk link to S1
+R1(config-if)# no shutdown
+R1(config-if)# end
+```
+
+---
+
+
+
+### **4.2.5 Vérification de la connectivité entre PC1 et PC2**
+
+#### 🖥️ Étape 1 : Vérifier la configuration IP de PC1
+
+```lua
+C:\Users\PC1> ipconfig
+
+Windows IP Configuration
+Ethernet adapter Ethernet0:
+  IPv4 Address      : 192.168.10.10
+  Subnet Mask       : 255.255.255.0
+  Default Gateway   : 192.168.10.1
+```
+
+🔍 **Vérifie que PC1 est bien dans VLAN 10 et utilise la bonne passerelle.**
+
+---
+
+#### 📡 Étape 2 : Ping vers PC2 (VLAN 20)
+
+```lua
+C:\Users\PC1> ping 192.168.20.10
+
+Pinging 192.168.20.10 with 32 bytes of data:
+Reply from 192.168.20.10: bytes=32 time<1ms TTL=127
+Reply from 192.168.20.10: bytes=32 time<1ms TTL=127
+Reply from 192.168.20.10: bytes=32 time<1ms TTL=127
+Reply from 192.168.20.10: bytes=32 time<1ms TTL=127
+
+Ping statistics for 192.168.20.10:
+    Sent = 4, Received = 4, Lost = 0 (0% loss)
+```
+
+✅ **Succès : Le routage inter-VLAN fonctionne bien via le router-on-a-stick.**
+
+---
+
+#### 🖧 Étape 3 : Ping vers le switch S1 (IP de gestion)
+
+```lua
+C:\Users\PC1> ping 192.168.99.2
+
+Pinging 192.168.99.2 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Reply from 192.168.99.2: bytes=32 time=2ms TTL=254
+Reply from 192.168.99.2: bytes=32 time=1ms TTL=254
+
+Ping statistics for 192.168.99.2:
+    Sent = 4, Received = 2, Lost = 2 (50% loss)
+```
+
+⚠️ **Résultat mitigé :** connectivité partielle avec l’interface de gestion du switch. Cela peut être dû à un pare-feu local ou à une configuration d'accès management VLAN sur le switch.
+
+### **4.2.6 Vérification du Routage Inter-VLAN avec Router-on-a-Stick**
+
+#### ✅ Commande 1 : Vérifier la table de routage
+
+```bash
+R1# show ip route | begin Gateway
+```
+
+**Résultat attendu :**
+
+- Routes connectées (C) pour chaque VLAN (10, 20, 99).
+    
+- Interfaces de sortie : `G0/0/1.x`.
+    
+
+```text
+C  192.168.10.0/24 is directly connected, G0/0/1.10
+C  192.168.20.0/24 is directly connected, G0/0/1.20
+C  192.168.99.0/24 is directly connected, G0/0/1.99
+```
+
+---
+
+#### ✅ Commande 2 : Vérifier les IPs des sous-interfaces et leur état
+
+```bash
+R1# show ip interface brief | include up
+```
+
+**Résultat attendu :**
+
+- Chaque sous-interface (`.10`, `.20`, `.99`) est **up/up** avec la bonne adresse IP.
+    
+
+```text
+Gi0/0/1.10  192.168.10.1  up  up
+Gi0/0/1.20  192.168.20.1  up  up
+Gi0/0/1.99  192.168.99.1  up  up
+```
+
+---
+
+#### ✅ Commande 3 : Vérifier les détails d'une sous-interface
+
+```bash
+R1# show interfaces g0/0/1.10
+```
+
+**Points clés à valider :**
+
+- Encapsulation : `802.1Q`
+    
+- VLAN ID correct : `Vlan ID 10`
+    
+- Adresse IP correcte
+    
+- Interface **up/up**
+    
+
+---
+
+#### ✅ Commande 4 : Vérifier l’état des trunks sur le switch
+
+```bash
+S1# show interfaces trunk
+```
+
+**Résultat attendu :**
+
+- Ports trunk actifs (`Fa0/1`, `Fa0/5`)
+    
+- VLANs autorisés : `1,10,20,99`
+    
+- VLANs en état "forwarding"
+    
+
+```text
+Port      Vlans allowed on trunk     : 1-4094
+Port      Vlans active               : 1,10,20,99
+Port      Vlans forwarding           : 1,10,20,99
+```
+
+---
+
+### 🔧 Remarque importante :
+
+Même si le VLAN 1 n’est pas configuré manuellement, il est **inclus par défaut** pour le trafic de contrôle (CDP, STP, etc.).
+
