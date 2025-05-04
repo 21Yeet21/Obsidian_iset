@@ -1,4 +1,3 @@
-Below is a reformatted and expanded explanation of each module from "Chapitre 6: OSPF à zone unique" in the document "ospf-ospfV2.pdf." I’ve broken down the content into digestible parts, added more detail for clarity, and structured it to enhance understanding, all while maintaining the original intent.
 
 
 # Expanded Summaries for OSPF Single-Area Configuration Modules
@@ -16,7 +15,7 @@ This section explains the inner workings of the OSPF (Open Shortest Path First) 
 **OSPF’s Communication Tools (Packets):**  
 OSPF uses five types of messages to keep everything running smoothly:  
 - **Hello**: A friendly handshake to find neighbors and check if they’re still around.  
-- ![[Pasted image 20250504143041.png]]
+![[Pasted image 20250504172345.png]]
 - **Database Description (DBD)**: A quick summary of the network map, shared between routers to see if they’re on the same page.  
 - **Link-State Request (LSR)**: A polite “Can you send me more details?” when a router needs specific updates.  
 - **Link-State Update (LSU)**: The full scoop—detailed updates about the network sent to neighbors.  
@@ -55,13 +54,25 @@ FuLL
 **Overview:**  
 This part walks you through configuring OSPFv2, the version of OSPF for IPv4 networks (the older internet address system). It’s a step-by-step guide to get routers talking and routing data efficiently in a single area.
 
+```
+router ospf id-processus
+```
+
 **Configuration Steps Made Simple:**  
 - **Give Each Router a Name (Router ID)**: Every router needs a unique ID, like a name tag. You can set it yourself with a command like `router-id 1.1.1.1`, or OSPF picks one from the highest IP address on the router’s interfaces (e.g., a loopback or Ethernet port).  
-- **Turn OSPF On**: Use the `network` command (e.g., `network 172.16.1.0 0.0.0.255 area 0`) to tell OSPF which interfaces (network connections) to use. The “0.0.0.255” part is a *wildcard mask* that says “include all addresses in this range.” Or, you can activate specific interfaces directly.  
-- **Quiet Down Unused Ports (Passive Interfaces)**: Use `passive-interface GigabitEthernet0/0` to stop OSPF from chatting on interfaces connected to devices like PCs. This cuts down on noise and boosts security.
+- Exécutez la commande `show ip protocols` pour vérifier l'ID de routeur.
+- Utilisez la commande `clear ip ospf process` après avoir modifié l'ID de routeur pour rendre la modification effective.
+
+- **Turn OSPF On**: Use the `network` command (e.g., `network 172.16.1.0 0.0.0.255 area 0`) to tell OSPF which interfaces (network connections) to use. The “0.0.0.255” part is a *wildcard mask* that says “include all addresses in this range.” Or, you can activate specific interfaces directly.
+- ![[Pasted image 20250504175400.png]]
+- ![[Pasted image 20250504175642.png]]
+- **Quiet Down Unused Ports (Passive Interfaces)**: Use `passive-interface GigabitEthernet0/0` to stop OSPF from chatting on interfaces connected to devices like PCs. This cuts down on noise and boosts security.![[Pasted image 20250504175738.png]]
+
+
 
 **Choosing the Best Path (Cost Metric):**  
 OSPF picks routes based on *cost*, which depends on how fast an interface is (bandwidth). Lower cost = better path. You can tweak this:  
+![[Pasted image 20250504180154.png]]
 - **Update the Speed Standard**: Use `auto-cost reference-bandwidth 1000` to tell OSPF that modern links are faster (e.g., 1000 Mbps) than the default old-school setting.  
 - **Adjust Bandwidth**: On slower links (like serial connections), set the real speed with `bandwidth 64` (for 64 Kbps).  
 - **Set Cost Directly**: For total control, use `ip ospf cost 15625` on an interface to override the automatic cost.

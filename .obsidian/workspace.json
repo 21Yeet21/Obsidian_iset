@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA2/05-STP concepts/Purpose of STP.md",
+                "file": "routage/OSPF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Purpose of STP"
+              "title": "OSPF"
             }
           }
         ]
@@ -171,19 +171,19 @@
   },
   "active": "2e9799a2c5949951",
   "lastOpenFiles": [
+    "images/Pasted image 20250504180154.png",
+    "images/Pasted image 20250504175738.png",
+    "images/Pasted image 20250504175642.png",
+    "images/Pasted image 20250504175400.png",
+    "images/Pasted image 20250504172345.png",
+    "CCNA2/05-STP concepts/Purpose of STP.md",
     "images/Pasted image 20250503200520.png",
     "images/Pasted image 20250503200459.png",
     "images/Screenshot 2025-05-03 200442.png",
     "images/Screenshot 2025-05-03 200333 1.png",
     "images/Screenshot 2025-05-03 200333.png",
     "images/Pasted image 20250503200323.png",
-    "images/Pasted image 20250503195939.png",
-    "images/Pasted image 20250503195644.png",
-    "images/Pasted image 20250503194118.png",
-    "images/Pasted image 20250503194054.png",
-    "images/Pasted image 20250503194044.png",
     "CCNA2/03-VLANs/Vlan Overview.md",
-    "CCNA2/05-STP concepts/Purpose of STP.md",
     "CCNA2/05-STP concepts",
     "CCNA2/03-VLANs/VLAN Trunk.md",
     "CCNA2/04-Inter-VLAN-Routing/Inter-VLAN Routing Operation.md",
