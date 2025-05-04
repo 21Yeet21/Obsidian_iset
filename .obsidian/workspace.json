@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b48e53a934c832bd",
+        "id": "9fce35133a403655",
         "type": "tabs",
         "children": [
           {
@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA2/Inter-VLAN-Routing/Router-on-a-stick.md",
+                "file": "CCNA2/05-STP concepts/Purpose of STP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Router-on-a-stick"
+              "title": "Purpose of STP"
             }
           }
         ]
@@ -171,27 +171,34 @@
   },
   "active": "2e9799a2c5949951",
   "lastOpenFiles": [
-    "images/Pasted image 20250502213146.png",
-    "CCNA2/Inter-VLAN-Routing/Inter-VLAN Routing Operation.md",
-    "CCNA2/Inter-VLAN-Routing/Router-on-a-stick.md",
-    "images/Pasted image 20250502211818.png",
-    "CCNA2/VLANs/VLAN Trunk.md",
-    "CCNA2/Inter-VLAN-Routing",
-    "CCNA2/VLANs/VLAN Configuration.md",
-    "images/Pasted image 20250502154940.png",
-    "CCNA2/VLANs/VLANs in a Multi-Switched Environment.md",
-    "Untitled.md",
-    "images/Pasted image 20250428194724.png",
-    "images/Pasted image 20250428193731.png",
-    "images/Pasted image 20250428193729.png",
-    "images/Pasted image 20250428193432.png",
-    "images/Pasted image 20250428192502.png",
-    "CCNA2/VLANs/Vlan Overview.md",
-    "CCNA2/Concepts de commutation/Collision and broadcast domain.md",
-    "CCNA2/Concepts de commutation/Transfere de trame.md",
-    "CCNA2/VLANs",
+    "images/Pasted image 20250503200520.png",
+    "images/Pasted image 20250503200459.png",
+    "images/Screenshot 2025-05-03 200442.png",
+    "images/Screenshot 2025-05-03 200333 1.png",
+    "images/Screenshot 2025-05-03 200333.png",
+    "images/Pasted image 20250503200323.png",
+    "images/Pasted image 20250503195939.png",
+    "images/Pasted image 20250503195644.png",
+    "images/Pasted image 20250503194118.png",
+    "images/Pasted image 20250503194054.png",
+    "images/Pasted image 20250503194044.png",
+    "CCNA2/03-VLANs/Vlan Overview.md",
+    "CCNA2/05-STP concepts/Purpose of STP.md",
+    "CCNA2/05-STP concepts",
+    "CCNA2/03-VLANs/VLAN Trunk.md",
+    "CCNA2/04-Inter-VLAN-Routing/Inter-VLAN Routing Operation.md",
     "CCNA2/Untitled.md",
-    "CCNA2/configuration du base d'un perepherique/Verification of Directly Connected Networks and Interface Status.md",
+    "CCNA2/04-Inter-VLAN-Routing/Router-on-a-stick.md",
+    "CCNA2/04-Inter-VLAN-Routing/Troubleshooting inter-vlan-routing.md",
+    "CCNA2/04-Inter-VLAN-Routing/Inter-Vlan L3 Switches.md",
+    "CCNA2/04-Inter-VLAN-Routing",
+    "CCNA2/03-VLANs/VLAN Configuration.md",
+    "CCNA2/03-VLANs/VLANs in a Multi-Switched Environment.md",
+    "Untitled.md",
+    "CCNA2/02-Concepts de commutation/Collision and broadcast domain.md",
+    "CCNA2/02-Concepts de commutation/Transfere de trame.md",
+    "CCNA2/03-VLANs",
+    "CCNA2/01-configuration du base d'un perepherique/Verification of Directly Connected Networks and Interface Status.md",
     "ISET/Projet_integra/S2.md",
     "ISET/Projet_integra/S1.md",
     "routage/classe routage.md",
@@ -204,18 +211,11 @@
     "virtualization/module 4.md",
     "virtualization/module 3.md",
     "virtualization/module 2.md",
-    "virtualization/module 1.md",
-    "ISET/Virtualization/intro to Virtualization and VMware.md",
     "virtualization",
-    "routage/routing deepseek.md",
     "routage",
     "Untitled",
     "ISET/Administration des Services Reseau/jebri",
-    "images/Pasted image 20250315225740.png",
-    "images/Pasted image 20250315225256.png",
-    "images/Pasted image 20250315225013.png",
-    "CCNA2/Concepts de commutation",
-    "Local to VM",
-    "Local to VM/Git"
+    "CCNA2/02-Concepts de commutation",
+    "Local to VM"
   ]
 }
