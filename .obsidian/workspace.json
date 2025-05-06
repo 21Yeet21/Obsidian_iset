@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA2/05-STP concepts/Evolution of STP.md",
+                "file": "CCNA2/06-EtherChannel/3-TroubleShoot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Evolution of STP"
+              "title": "3-TroubleShoot"
             }
           }
         ]
@@ -170,20 +170,24 @@
   },
   "active": "2e9799a2c5949951",
   "lastOpenFiles": [
+    "images/Pasted image 20250505214526.png",
+    "images/Pasted image 20250505214511.png",
+    "images/Pasted image 20250505214430.png",
+    "images/Pasted image 20250505214417.png",
+    "CCNA2/06-EtherChannel/2-Configure EtherChannel.md",
+    "CCNA2/06-EtherChannel/3-TroubleShoot.md",
+    "images/Pasted image 20250505213218.png",
+    "images/Pasted image 20250505212824.png",
+    "CCNA2/06-EtherChannel/1-EtherChannel Operation.md",
+    "images/Pasted image 20250505210505.png",
+    "images/Pasted image 20250505204748.png",
+    "images/Pasted image 20250505204430.png",
+    "CCNA2/05-STP concepts/Evolution of STP.md",
+    "CCNA2/06-EtherChannel",
     "images/Pasted image 20250504205504.png",
     "images/Pasted image 20250504205423.png",
-    "images/Pasted image 20250504205321.png",
-    "images/Pasted image 20250504204742.png",
     "CCNA2/05-STP concepts/STP Operations.md",
-    "CCNA2/05-STP concepts/Evolution of STP.md",
-    "images/Pasted image 20250504204333.png",
-    "images/Pasted image 20250504204253.png",
-    "images/Pasted image 20250504204234.png",
-    "images/Pasted image 20250504204230.png",
     "CCNA2/05-STP concepts/Purpose of STP.md",
-    "images/Pasted image 20250504201921.png",
-    "images/Pasted image 20250504201140.png",
-    "images/Pasted image 20250504200929.png",
     "routage/OSPF.md",
     "CCNA2/03-VLANs/Vlan Overview.md",
     "CCNA2/05-STP concepts",
@@ -206,15 +210,11 @@
     "routage/classe routage.md",
     "routage/Untitled 1.md",
     "Untitled/Base.md",
-    "DHCP-DNS/DNS.md",
-    "DHCP-DNS/DHCP.md",
     "DHCP-DNS",
-    "Local to VM/Git/GitHub.md",
     "virtualization",
     "routage",
     "Untitled",
     "ISET/Administration des Services Reseau/jebri",
-    "CCNA2/02-Concepts de commutation",
-    "Local to VM"
+    "CCNA2/02-Concepts de commutation"
   ]
 }
