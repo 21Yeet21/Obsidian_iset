@@ -9,8 +9,10 @@
 	3. DBA_TABLES-->BD
 	4. USER_TABLES-->USER COURANT
 	5. ALL_TABLES
-	6. LDD (create/alter/drop) 
-	7. LMD(insert/update/delete)
-	8. LID(select) 
-	9. tampon de la bd=database buffers 
-	10. tampon de la journalisation=redo buffers
+	6. 
+	7. LDD (create/alter/drop) 
+	8. 
+	9. LMD(insert/update/delete)
+	10. LID(select) 
+	11. tampon de la bd=database buffers 
+	12. tampon de la journalisation=redo buffers
