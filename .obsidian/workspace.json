@@ -6,73 +6,20 @@
       {
         "id": "4335f6532721a644",
         "type": "tabs",
-        "dimension": 62.172284644194754,
         "children": [
           {
-            "id": "ca54fd20a0c48293",
+            "id": "9aaac20663612b68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CCNA1/Addressage IPV6.md",
+                "file": "TP ROUTAGA/TP Routage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Addressage IPV6"
+              "title": "TP Routage"
             }
-          },
-          {
-            "id": "83af73921d8f4b0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ISET/Administration des Services Reseau/jebri/NFS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "NFS"
-            }
-          },
-          {
-            "id": "893d0e4614a789a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ISET/Administration des Services Reseau/jebri/HA.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HA"
-            },
-            "group": "f715c5877165f2e6"
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "d2c8c407c679e121",
-        "type": "tabs",
-        "dimension": 37.82771535580524,
-        "children": [
-          {
-            "id": "517f8acdbb528e46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ISET/Administration des Services Reseau/jebri/HA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HA"
-            },
-            "group": "f715c5877165f2e6"
           }
         ]
       }
@@ -94,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -131,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "df691a0ef8c16e2d",
@@ -222,36 +168,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "893d0e4614a789a9",
+  "active": "9aaac20663612b68",
   "lastOpenFiles": [
-    "ISET/Administration des Services Reseau/jebri/HTTP.md",
-    "ISET/Administration des Services Reseau/jebri/HA.md",
-    "ISET/Administration des Services Reseau/jebri/SAMBA.md",
-    "ISET/Administration des Services Reseau/jebri/NFS.md",
-    "ISET/Administration des Services Reseau/jebri/FTP.md",
-    "ipv6.md",
-    "ISET/Administration des Services Reseau/jebri/DNS 2.0.md",
-    "ISET/Administration des Services Reseau/jebri/DNS.md",
-    "ISET/Administration des Services Reseau/jebri/DHCP.md",
-    "CCNA1/Addressage IPV6.md",
-    "TP ROUTAGA/Untitled.md",
+    "ISET/routage/corriger.md",
     "TP ROUTAGA/TP Routage.md",
-    "ADMIN/NMCLI.md",
-    "TP ROUTAGA",
-    "ISET/Base/ChatGpt.md",
-    "ISET/routage/Untitled 1.md",
     "ISET/routage/OSPF.md",
-    "ISET/Base/CHAPITRE 3.md",
-    "ISET/Base/CHAPTER 4.md",
+    "ISET/routage/Chat.md",
+    "ISET/routage/Grok.md",
+    "ISET/routage/classe routage.md",
+    "ISET/routage/Untitled 1.md",
+    "ipv6.md",
+    "Untitled.md",
+    "SERVICES.md",
+    "Grok 2.0.md",
+    "ISET/virtualization 1/ALL IN 1.md",
+    "ISET/virtualization 1/CLOUD/Q1.md",
+    "ISET/virtualization 1/CLOUD/M1.md",
+    "ISET/virtualization 1/Q1.md",
+    "ISET/Base/CHAT REV.md",
+    "ISET/Base/ChatGpt.md",
+    "ISET/Base/revvvvv.md",
+    "ISET/Base/REVVVVVVVVVV.md",
     "ISET/Base/GROK.md",
-    "ISET/Base/GEMIN REV.md",
     "ISET/Base/Base.md",
-    "PREP CERTIF/HRIGA.md",
-    "PREP CERTIF/Quiz.md",
-    "PREP CERTIF/Notes.md",
-    "PREP CERTIF/HRIGA11.md",
+    "ISET/Base/Summary.md",
+    "ISET/virtualization 1/module 4.md",
+    "ISET/virtualization 1/module 3.md",
+    "ISET/virtualization 1/module 2.md",
+    "ISET/virtualization 1/module 1.md",
+    "ISET/virtualization 1/CLOUD",
+    "images/Pasted image 20250528205202.png",
+    "TP ROUTAGA",
     "PREP CERTIF",
-    "ISET/Commutation des LANs/Training 2.0.md",
     "images/Pasted image 20250521163923.png",
     "images/Pasted image 20250521163531.png",
     "images/Pasted image 20250521163452.png",
@@ -261,14 +209,12 @@
     "images/Pasted image 20250521162731.png",
     "images/Pasted image 20250521162717.png",
     "images/Pasted image 20250521162657.png",
-    "images/Pasted image 20250521162644.png",
     "TMUX",
     "ADMIN",
     "CCNA2/06-EtherChannel",
     "CCNA2/05-STP concepts",
     "CCNA2/04-Inter-VLAN-Routing",
     "CCNA2/03-VLANs",
-    "ISET/DHCP-DNS",
-    "ISET/virtualization 1"
+    "ISET/DHCP-DNS"
   ]
 }
